@@ -2,8 +2,6 @@
 
 Este proyecto implementa un flujo completo para automatizar la monitorizacion de sensores ambientales utilizando el protocolo MQTT. El sistema permite controlar la captura de datos en tiempo real mediante un script en Bash, simulando dispositivos o conectandose a un broker oficial, para posteriormente procesar los registros y generar representaciones graficas tanto en texto plano (consola) como en imagenes estasisticas (PNG).
 
----
-
 ## Descripcion de los Componentes
 
 El repositorio esta organizado con los siguientes archivos:
@@ -14,7 +12,7 @@ El repositorio esta organizado con los siguientes archivos:
 4. plot_mqtt.py: Modulo encargado del analisis y la visualizacion. Lee de forma segura el archivo de texto con las trazas, genera un grafico de dispersion en formato ASCII directo por la terminal y exporta de manera automatica una grafica estadistica lineal utilizando matplotlib.
 5. mqtt_capture.log: Archivo de registro historico que almacena de forma temporal o permanente las capturas ordenadas por topicos y payloads durante la monitorizacion activa.
 
----
+
 
 ## Instrucciones de Ejecucion
 
@@ -43,29 +41,10 @@ Pasos internos que realiza el script de manera autonoma:
 4. Cierre Seguro: Al cumplirse el tiempo, envia de forma escalonada senales de terminacion garantizando que el proceso finalice de forma limpia sin dejar tareas colgadas en el sistema.
 5. Generacion de Graficos: Invoca a plot_mqtt.py para visualizar en consola los ultimos valores e inmortalizar el historico en la imagen estadistica.
 
----
-
-## Visualizacion de Resultados
-
-### Grafica en Terminal (ASCII)
-El parseador genera un volcado visual directamente en la linea de comandos tras cada ejecucion exitosa para comprobar los datos rapido sin salir de la consola:
-
-MQTT Payload Plot (ASCII)
-muestras 20
-y_min=1  y_max=102 | archivo mqtt_capture.log
-
- 102 | * * * * * * |
-     |
-     |
-   1 |   * * * * * * * * +------------------------------------------------------------
-       0                                                        19
-
-Ultimos valores: 102, 1, 102, 102, 1, 102, 1, 102, 102, 1
 
 ### Grafica Estadistica Profesional
 De manera paralela, las metricas completas del sensor de particulas se guardan automaticamente en la carpeta plots bajo el nombre mqtt_plot.png. Esta imagen incluye el trazado lineal completo, leyendas, marcas de puntos por muestra y rejillas de dispersion estilizadas.
 
----
 
 ## Tecnologías Utilizadas
 * Bash Linux Scripting: Control de concurrencia, captura de PID y gestion de senales del kernel.
