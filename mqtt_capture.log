@@ -1,0 +1,48 @@
+[MSG] Topic: sensor/data/gas_sensor
+Payload: "GM102B":42.00, "GM302B":37.00, "GM502B":40.00, "GM702B":125.00)
+[MSG] Topic: sensor/data/sen55
+Payload: {"MassConcentrationPm1p0":102.00, "AmbientTemperature": 21.17}
+[MSG] Topic: sensor/data/gas_sensor
+Payload: "GM102B":38.00, "GM302B":37.00, "GM502B":40.00, "GM702B":125.00)
+[MSG] Topic: sensor/data/sen55
+Payload: {"MassConcentrationPm1p0":102.00, "AmbientTemperature": 21.17}
+[MSG] Topic: sensor/data/gas_sensor
+Payload: "GM102B":39.00, "GM302B":37.00, "GM502B":40.00, "GM702B":125.00)
+[MSG] Topic: sensor/data/sen55
+Payload: {"MassConcentrationPm1p0":1.00, "AmbientTemperature": 21.17}
+[MSG] Topic: sensor/data/gas_sensor
+Payload: "GM102B":42.00, "GM302B":37.00, "GM502B":40.00, "GM702B":125.00)
+[MSG] Topic: sensor/data/sen55
+Payload: {"MassConcentrationPm1p0":102.00, "AmbientTemperature": 21.17}
+[MSG] Topic: sensor/data/gas_sensor
+Payload: "GM102B":41.00, "GM302B":37.00, "GM502B":40.00, "GM702B":125.00)
+[MSG] Topic: sensor/data/sen55
+Payload: {"MassConcentrationPm1p0":1.00, "AmbientTemperature": 21.17}
+[MSG] Topic: sensor/data/gas_sensor
+Payload: "GM102B":43.00, "GM302B":37.00, "GM502B":40.00, "GM702B":125.00)
+[MSG] Topic: sensor/data/sen55
+Payload: {"MassConcentrationPm1p0":102.00, "AmbientTemperature": 21.17}
+[MSG] Topic: sensor/data/gas_sensor
+Payload: "GM102B":38.00, "GM302B":37.00, "GM502B":40.00, "GM702B":125.00)
+[MSG] Topic: sensor/data/sen55
+Payload: {"MassConcentrationPm1p0":102.00, "AmbientTemperature": 21.17}
+[MSG] Topic: sensor/data/gas_sensor
+Payload: "GM102B":38.00, "GM302B":37.00, "GM502B":40.00, "GM702B":125.00)
+[MSG] Topic: sensor/data/sen55
+Payload: {"MassConcentrationPm1p0":1.00, "AmbientTemperature": 21.17}
+[MSG] Topic: sensor/data/gas_sensor
+Payload: "GM102B":42.00, "GM302B":37.00, "GM502B":40.00, "GM702B":125.00)
+[MSG] Topic: sensor/data/sen55
+Payload: {"MassConcentrationPm1p0":102.00, "AmbientTemperature": 21.17}
+[MSG] Topic: sensor/data/gas_sensor
+Payload: "GM102B":42.00, "GM302B":37.00, "GM502B":40.00, "GM702B":125.00)
+[MSG] Topic: sensor/data/sen55
+Payload: {"MassConcentrationPm1p0":1.00, "AmbientTemperature": 21.17}
+[MSG] Topic: sensor/data/gas_sensor
+Payload: "GM102B":41.00, "GM302B":37.00, "GM502B":40.00, "GM702B":125.00)
+[MSG] Topic: sensor/data/sen55
+Payload: {"MassConcentrationPm1p0":102.00, "AmbientTemperature": 21.17}
+[MSG] Topic: sensor/data/gas_sensor
+Payload: "GM102B":40.00, "GM302B":37.00, "GM502B":40.00, "GM702B":125.00)
+[MSG] Topic: sensor/data/sen55
+Payload: {"MassConcentrationPm1p0":102.00, "AmbientTemperature": 21.17}
