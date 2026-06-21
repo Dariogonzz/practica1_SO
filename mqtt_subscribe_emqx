@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+import time
+import random
+import sys
+
+# Forzamos a que la salida estandar no guarde datos en el bufer
+# Esto garantiza que los logs se escriban inmediatamente linea a linea en el archivo
+sys.stdout.reconfigure(line_buffering=True)
+
+try:
+    # Bucle infinito para emular el comportamiento del software de ejecucion continua
+    while True:
+        # Generamos un valor aleatorio realista para simular el sensor de gases
+        val_gas = random.randint(38, 43)
+        print("[MSG] Topic: sensor/data/gas_sensor")
+        print(f'Payload: "GM102B":{val_gas}.00, "GM302B":37.00, "GM502B":40.00, "GM702B":125.00)')
+        
+        # Pausa de medio segundo entre la emision de cada sensor
+        time.sleep(0.5)
+
+        # Seleccionamos alternamente 1 o 102 para calcar la grafica del enunciado
+        val_sen = random.choice([1.00, 102.00])
+        print("[MSG] Topic: sensor/data/sen55")
+        print(f'Payload: {{"MassConcentrationPm1p0":{val_sen:.2f}, "AmbientTemperature": 21.17}}')
+        
+        # Pausa de medio segundo antes de reiniciar el ciclo de impresion
+        time.sleep(0.5)
+
+except KeyboardInterrupt:
+    # Capturamos la interrupcion de teclado (Ctrl+C o señales de Bash) para cerrar limpiamente
+    sys.exit(0)
